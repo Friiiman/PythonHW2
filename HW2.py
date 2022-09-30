@@ -19,7 +19,6 @@ def task2():
     for i in range(1, num + 1):
         mult *= i
         print(mult, end = ' ')
-        i += 1
 
 def task3():
     # Задайте список из n чисел заполненный по формуле (1 + 1 / n) ** n 
