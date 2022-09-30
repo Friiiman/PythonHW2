@@ -41,12 +41,12 @@ def task4():
         my_list.append(i)
 
     first_pos = int(input("Введите первую позицию: "))
-    while first_pos > interval * 2 + 1:
+    while first_pos > interval * 2 + 1 or first_pos < 1:
         print('Введено неверное число')
         first_pos = int(input("Введите первую позицию: "))
 
     second_pos = int(input("Введите вторую позицию: "))
-    while second_pos > interval * 2 + 1:
+    while second_pos > interval * 2 + 1 or second_pos < 1:
         print('Введено неверное число')
         second_pos = int(input("Введите первую позицию: "))
 
