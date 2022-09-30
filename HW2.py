@@ -51,12 +51,12 @@ def task4():
         print('Введено неверное число')
         second_pos = int(input("Введите первую позицию: "))
 
-    print(f'Список чисел в промежутке от -{interval} до {interval}]: {my_list}')
-
     path = 'file.txt'
     with open(path, 'w') as data:
         data.write(f'{first_pos}\n')
         data.write(f'{second_pos}\n')
+
+    print(f'Список чисел в промежутке от -{interval} до {interval}]: {my_list}')
 
     data = open(path, 'r')
     num_first = int(data.readline())
