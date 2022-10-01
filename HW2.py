@@ -2,7 +2,7 @@ def task1():
     # Напишите программу, которая принимает на вход вещественное число 
     # и показывает сумму его цифр.
 
-    num = float(input("Введите число: "))
+    num = abs(float(input("Введите число: ")))
     num_string = str(num)
     num_string = num_string.replace('.', '')
     string_list = list(num_string)
